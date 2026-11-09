@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Acme App</title>
 
@@ -12,6 +12,7 @@
 
   <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body class="min-h-screen bg-[#F6F6FB] font-['Inter'] text-[#1C1A2E] antialiased">
@@ -21,11 +22,11 @@
 
     <a href="#" class="relative text-3xl font-bold tracking-tight">
       Acme
-      <span class="absolute -right-2 top-1 h-2 w-2 rounded-full bg-[#5E44FF]"></span>
+      <span class="absolute -right-2 top-1 h-2 w-2 rounded-full bg-brand></span>
     </a>
 
     <nav class="hidden items-center gap-10 text-base font-medium sm:flex">
-      <a href="#" class="text-[#5E44FF] underline underline-offset-4">Home</a>
+      <a href="#" class="text-brand underline underline-offset-4 hover:text-[#5E44FF] hover:underline">Home</a>
       <a href="#" class="transition hover:text-[#5E44FF] hover:underline">Features</a>
       <a href="#" class="transition hover:text-[#5E44FF] hover:underline">Pricing</a>
       <a href="#" class="transition hover:text-[#5E44FF] hover:underline">Contact</a>
@@ -183,7 +184,7 @@
         <!-- Submit Button -->
         <button
           type="submit"
-          class="w-full rounded-2xl bg-[#1A1A2C] px-9 py-4 text-white transition-colors hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76]"
+          class="rounded-2xl w-[589px] bg-[#1A1A2C] px-9 py-4 text-white transition-colors hover:bg-[#5F5F76] focus:bg-[#35354D] focus:outline-none focus:ring-2 focus:ring-[#5F5F76]"
         >
           Submit
         </button>
