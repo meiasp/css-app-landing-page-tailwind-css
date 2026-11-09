@@ -1,27 +1,41 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="min-h-screen bg-[#F6F6FB] font-sans text-ink antialiased">
-    <header class="m-6 flex items-center justify-between rounded-full bg-white px-8 py-6 shadow-[0_8px_30px_rgba(28,26,46,0.06)] sm:px-20">
-      <a href="#" class="relative text-3xl font-bold tracking-tight">
-        Acme<span class="absolute -right-2 top-1 h-2 w-2 rounded-full bg-brand"></span>
-      </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme App</title>
 
-      <nav class="hidden items-center gap-10 text-base font-medium sm:flex">
-        <a href="#" class="text-brand underline underline-offset-4 text-[#5E44FF]">Home</a>
-        <a href="#" class="transition hover:text-brand">Features</a>
-        <a href="#" class="transition hover:text-brand">Pricing</a>
-        <a href="#" class="transition hover:text-brand">Contact</a>
-      </nav>
-    </header>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-[#F6F6FB] font-['Inter'] text-[#1C1A2E] antialiased">
+
+  <!-- Navbar -->
+  <header class="m-6 flex items-center justify-between rounded-full bg-white px-8 py-6 shadow-[0_8px_30px_rgba(28,26,46,0.06)] sm:px-20">
+
+    <a href="#" class="relative text-3xl font-bold tracking-tight">
+      Acme
+      <span class="absolute -right-2 top-1 h-2 w-2 rounded-full bg-[#5E44FF]"></span>
+    </a>
+
+    <nav class="hidden items-center gap-10 text-base font-medium sm:flex">
+      <a href="#" class="text-[#5E44FF] underline underline-offset-4">Home</a>
+      <a href="#" class="transition hover:text-[#5E44FF]">Features</a>
+      <a href="#" class="transition hover:text-[#5E44FF]">Pricing</a>
+      <a href="#" class="transition hover:text-[#5E44FF]">Contact</a>
+    </nav>
+
+  </header>
+
+  <!-- Hero Section -->
   <main class="flex flex-col items-center px-6 pb-24 pt-24 text-center sm:pt-32">
+
     <span class="inline-flex items-center gap-2 rounded-full bg-[#563AFF1A] px-5 py-2 text-sm font-medium text-[#5E44FF]">
       <span>🌈</span>
       Acme Productivity App
@@ -35,9 +49,80 @@
       Streamline your workflow with our all-in-one productivity app.
     </p>
 
-    <a href="#" class="mt-12 rounded-2xl bg-ink px-9 py-4 text-white bg-black font-semibold transition hover:bg-brand">
+    <a href="#" class="mt-12 rounded-2xl bg-[#1C1A2E] px-9 py-4 font-semibold text-white transition hover:bg-[#5E44FF]">
       Start Free Trial
     </a>
+
   </main>
-  </body>
+
+  <!-- Feature Cards Section -->
+  <section class="px-6 pb-24">
+
+    <div class="mx-auto w-full max-w-[1201px]">
+
+      <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+
+        <!-- Card 1 -->
+        <div class="flex h-[272px] w-full flex-col gap-10 rounded-3xl bg-[#D7E5F6] p-7">
+
+          <div class="flex h-[60px] w-[60px] items-center justify-center rounded-xl bg-white/70 text-4xl">
+            🚀
+          </div>
+
+          <div>
+            <h3 class="mb-2 text-2xl font-semibold leading-8 tracking-normal text-gray-800">
+              Streamlined Workflows
+            </h3>
+
+            <p class="text-base font-medium leading-6 tracking-normal text-gray-600">
+              Automate repetitive tasks and focus on high-impact work with our powerful productivity features.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flex h-[272px] w-full flex-col gap-10 rounded-3xl bg-[#D8E0FC] p-7">
+
+          <div class="flex h-[60px] w-[60px] items-center justify-center rounded-xl bg-white/70 text-4xl">
+            📈
+          </div>
+
+          <div>
+            <h3 class="mb-2 text-2xl font-semibold leading-8 tracking-normal text-gray-800">
+              Blazing Fast Performance
+            </h3>
+
+            <p class="text-base font-medium leading-6 tracking-normal text-gray-600">
+              Experience lightning-fast performance and instant responsiveness with our cutting-edge technology.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flex h-[272px] w-full flex-col gap-10 rounded-3xl bg-[#E8DCF6] p-7">
+
+          <div class="flex h-[60px] w-[60px] items-center justify-center rounded-xl bg-white/70 text-4xl">
+            😊
+          </div>
+
+          <div>
+            <h3 class="mb-2 text-2xl font-semibold leading-8 tracking-normal text-gray-800">
+              Intuitive Interface
+            </h3>
+
+            <p class="text-base font-medium leading-6 tracking-normal text-gray-600">
+              Our user-friendly interface makes it easy for anyone to streamline their workflow.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+</body>
 </html>
