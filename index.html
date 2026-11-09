@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,37 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <!-- Start Coding Here -->
+  <body class="min-h-screen bg-[#F6F6FB] font-sans text-ink antialiased">
+    <header class="m-6 flex items-center justify-between rounded-full bg-white px-8 py-6 shadow-[0_8px_30px_rgba(28,26,46,0.06)] sm:px-20">
+      <a href="#" class="relative text-3xl font-bold tracking-tight">
+        Acme<span class="absolute -right-2 top-1 h-2 w-2 rounded-full bg-brand"></span>
+      </a>
+
+      <nav class="hidden items-center gap-10 text-base font-medium sm:flex">
+        <a href="#" class="text-brand underline underline-offset-4 text-[#5E44FF]">Home</a>
+        <a href="#" class="transition hover:text-brand">Features</a>
+        <a href="#" class="transition hover:text-brand">Pricing</a>
+        <a href="#" class="transition hover:text-brand">Contact</a>
+      </nav>
+    </header>
+
+  <main class="flex flex-col items-center px-6 pb-24 pt-24 text-center sm:pt-32">
+    <span class="inline-flex items-center gap-2 rounded-full bg-[#563AFF1A] px-5 py-2 text-sm font-medium text-[#5E44FF]">
+      <span>🌈</span>
+      Acme Productivity App
+    </span>
+
+    <h1 class="mt-12 text-5xl font-extrabold sm:text-7xl md:text-8xl">
+      Boost Your <span class="text-[#5E44FF]">Product</span>ivity
+    </h1>
+
+    <p class="mt-8 max-w-xl text-lg font-semibold sm:text-2xl">
+      Streamline your workflow with our all-in-one productivity app.
+    </p>
+
+    <a href="#" class="mt-12 rounded-2xl bg-ink px-9 py-4 text-white bg-black font-semibold transition hover:bg-brand">
+      Start Free Trial
+    </a>
+  </main>
   </body>
 </html>
